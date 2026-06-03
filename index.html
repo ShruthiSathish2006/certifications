@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A public portfolio of certifications, credentials, and achievements."
+    />
+    <title>My Certifications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Shruthi's Certifications</p>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="profile-card__avatar">SS</div>
+          <div>
+            <p class="profile-card__label">Profile</p>
+            <h2>Shruthi Sathish</h2>
+            <p>Undergraduate Engineering Student
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="stats" aria-label="Certification statistics">
+        <article>
+          <strong id="total-certificates">0</strong>
+          <span>Total certificates</span>
+        </article>
+        <article>
+          <strong id="latest-year">—</strong>
+          <span>Latest credential</span>
+        </article>
+        <article>
+          <strong id="issuer-count">0</strong>
+          <span>Issuing organizations</span>
+        </article>
+      </section>
+
+      <nav class="tabs" aria-label="Portfolio sections">
+        <button class="tab-button is-active" type="button" data-tab="certifications">
+          Certifications
+        </button>
+        <button class="tab-button" type="button" data-tab="tech-stack">
+          Tech Stack
+        </button>
+      </nav>
+
+      <section class="toolbar" aria-label="Certification filters" data-tab-panel="certifications">
+        <div class="filter-wrap">
+          <label for="category-filter">Category</label>
+          <select id="category-filter">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="certifications" class="certifications" aria-live="polite" data-tab-panel="certifications">
+        <div class="section-heading">
+          <p class="eyebrow">Credentials</p>
+          <h2>Certification Library</h2>
+        </div>
+        <div id="certification-grid" class="certification-grid"></div>
+        <p id="empty-state" class="empty-state" hidden>
+          No certificates match that search yet.
+        </p>
+      </section>
+
+      <section id="tech-stack" class="tech-stack" hidden data-tab-panel="tech-stack">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Tech Stack</h2>
+        </div>
+        <div class="tech-stack-grid">
+          <article class="tech-stack-card">
+            <h3>Programming</h3>
+            <div>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </article>
+          <article class="tech-stack-card">
+            <h3>Data Science</h3>
+            <div>
+              <span>Data Analysis</span>
+              <span>Data Science</span>
+              <span>Analytics</span>
+              <span>Python</span>
+            </div>
+          </article>
+          <article class="tech-stack-card">
+            <h3>Databases</h3>
+            <div>
+              <span>DBMS</span>
+              <span>SQL</span>
+              <span>MongoDB</span>
+              <span>Cassandra</span>
+            </div>
+          </article>
+          <article class="tech-stack-card">
+            <h3>Tools & Systems</h3>
+            <div>
+              <span>Git</span>
+              <span>Linux</span>
+              <span>Command Line</span>
+              <span>Version Control</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="certifications.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
