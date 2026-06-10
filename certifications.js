@@ -1,5 +1,14 @@
 const certifications = [
   {
+    title: "Cloud Computing",
+    issuer: "NPTEL",
+    category: "Cloud Computing",
+    date: "Jan-Apr 2026",
+    description: "Completed the 12-week NPTEL Cloud Computing course with a final score of 86 and 4 recommended credits.",
+    skills: ["Cloud Computing", "NPTEL", "Distributed Systems"],
+    credentialUrl: "certificates/nptel-certificate.pdf"
+  },
+  {
     title: "DBMS Course - Master the Fundamentals and Advanced Concepts",
     issuer: "Scaler Topics",
     category: "Databases",
