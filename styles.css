@@ -294,6 +294,29 @@ select option {
   background: linear-gradient(145deg, var(--card-strong), rgba(255, 255, 255, 0.06));
 }
 
+.certificate-card--featured {
+  position: relative;
+  border-color: rgba(251, 191, 36, 0.72);
+  background:
+    linear-gradient(145deg, rgba(251, 191, 36, 0.18), rgba(139, 92, 246, 0.13)),
+    linear-gradient(145deg, var(--card-strong), rgba(255, 255, 255, 0.06));
+  box-shadow: 0 28px 90px rgba(251, 191, 36, 0.16), var(--shadow);
+}
+
+.certificate-card--featured::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent 42%);
+}
+
+.certificate-card--featured .certificate-card__badge {
+  color: #451a03;
+  background: linear-gradient(135deg, #fde68a, #fbbf24);
+}
+
 .certificate-card__top {
   display: flex;
   justify-content: space-between;

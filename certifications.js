@@ -1,5 +1,25 @@
 const certifications = [
   {
+    title: "PCED™ – Certified Entry-Level Data Analyst with Python",
+    issuer: "Python Institute / OpenEDG",
+    category: "Data Science",
+    date: "22 March 2026",
+    description: "Earned the Python Institute entry-level data analyst credential for the Data Science Track.",
+    skills: ["Python", "Data Analysis", "Data Science"],
+    credentialUrl: "certificates/certificate-76qq-sd5d-p9j2.pdf",
+    featured: true
+  },
+  {
+    title: "PCEP™ – Certified Entry-Level Python Programmer",
+    issuer: "Python Institute / OpenEDG",
+    category: "Programming",
+    date: "8 August 2025",
+    description: "Earned the Python Institute entry-level Python programmer credential for the General-Purpose Programming Track.",
+    skills: ["Python", "Programming", "Problem Solving"],
+    credentialUrl: "certificates/certificate-zo9w-rqb7-drtv.pdf",
+    featured: true
+  },
+  {
     title: "Cloud Computing",
     issuer: "NPTEL",
     category: "Cloud Computing",
@@ -27,15 +47,6 @@ const certifications = [
     credentialUrl: "certificates/linux-certificate.pdf"
   },
   {
-    title: "PCED™ – Certified Entry-Level Data Analyst with Python",
-    issuer: "Python Institute",
-    category: "Data Science",
-    date: "22 March 2026",
-    description: "Earned the Python Institute entry-level data analyst credential for the Data Science Track.",
-    skills: ["Python", "Data Analysis", "Data Science"],
-    credentialUrl: "certificates/certificate-76qq-sd5d-p9j2.pdf"
-  },
-  {
     title: "Data Science Essentials with Python",
     issuer: "Cisco Networking Academy",
     category: "Data Science",
@@ -61,14 +72,5 @@ const certifications = [
     description: "Completed Git training and online examination organized at New Horizon College of Engineering. Score: 73.33%.",
     skills: ["Git", "Version Control", "Developer Tools"],
     credentialUrl: "certificates/git-certificate.pdf"
-  },
-  {
-    title: "PCEP™ – Certified Entry-Level Python Programmer",
-    issuer: "Python Institute",
-    category: "Programming",
-    date: "8 August 2025",
-    description: "Earned the Python Institute entry-level Python programmer credential for the General-Purpose Programming Track.",
-    skills: ["Python", "Programming", "Problem Solving"],
-    credentialUrl: "certificates/certificate-zo9w-rqb7-drtv.pdf"
   }
 ];

@@ -47,10 +47,10 @@ function renderCertificates() {
 
   filteredCertificates.forEach((certificate) => {
     const card = document.createElement("article");
-    card.className = "certificate-card";
+    card.className = `certificate-card${certificate.featured ? " certificate-card--featured" : ""}`;
     card.innerHTML = `
       <div class="certificate-card__top">
-        <span class="certificate-card__badge">${certificate.category}</span>
+        <span class="certificate-card__badge">${certificate.featured ? "Featured · " : ""}${certificate.category}</span>
         <span class="certificate-card__date">${certificate.date}</span>
       </div>
       <h3>${certificate.title}</h3>
